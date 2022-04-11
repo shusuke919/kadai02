@@ -1,0 +1,15 @@
+body{
+/*45度に傾いたグラデーションで、青から始まり赤で終わる*/
+background: linear-gradient(-45deg, rgba(246, 225, 0, .5),
+rgba(225, 0, 161, .5));
+background-size: cover;
+font-family: "M PLUS 1p";
+height: 100vh; /* 100vhはスマホの画面の高さ　*/
+text-align: center;
+font-size: 40px;
+
+}
+
+img{
+width: 200px;
+}
