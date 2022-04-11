@@ -44,7 +44,7 @@ $("#gu").on("click", function(){
     $("#pc").text("グー")
     $("#result").text("あいこです")
     $("#opponent").attr("src","img/gu.png")
-  }, 1000);
+  }, 500);
    
   }
  else if(pc == 2){
@@ -53,7 +53,7 @@ $("#gu").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $('#point_me').text(++ PointMe);
     $("#opponent").attr("src","img/cho.png")
-  }, 1000);
+  }, 500);
 
   }
   if(pc == 3){
@@ -62,7 +62,7 @@ $("#gu").on("click", function(){
     $("#result").text("あなたの負けです")
     $('#point_com').text(++ PointCom);
     $("#opponent").attr("src","img/pa.png")
-  }, 1000);
+  }, 500);
   }
 });
 
@@ -106,7 +106,7 @@ $("#cho").on("click", function(){
     $("#result").text("あなたの負けです")
     $("#opponent").attr("src","img/gu.png")
     $('#point_com').text(++ PointCom);
-  }, 1000);
+  }, 500);
    
    
   }
@@ -115,7 +115,7 @@ $("#cho").on("click", function(){
     $("#pc").text("チョキ")
     $("#result").text("あいこです")
     $("#opponent").attr("src","img/cho.png")
-  }, 1000);
+  }, 500);
   }
   if(pc == 3){
     setTimeout(function(){
@@ -123,7 +123,7 @@ $("#cho").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $("#opponent").attr("src","img/pa.png")
     $('#point_me').text(++ PointMe);
-  }, 1000);
+  }, 500);
   }
 });
 
@@ -140,7 +140,7 @@ $("#pa").on("click", function(){
   function result(){
     setTimeout(function(){
     $(".jan_area").hide();
-  }, 6000);
+  }, 500);
   }
 
   setTimeout(function(){
@@ -164,7 +164,7 @@ $("#pa").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $("#opponent").attr("src","img/gu.png")
     $('#point_me').text(++ PointMe);
-  }, 1000);
+  }, 500);
    
   }
  else if(pc == 2){
@@ -173,14 +173,14 @@ $("#pa").on("click", function(){
     $("#result").text("あなたの負けです")
     $("#opponent").attr("src","img/cho.png")
     $('#point_com').text(++ PointCom);
-  }, 1000);
+  }, 500);
   }
   if(pc == 3){
     setTimeout(function(){
     $("#pc").text("パー")
     $("#result").text("あいこです")
     $("#opponent").attr("src","img/pa.png")
-  }, 1000);
+  }, 500);
   }
 });
 
