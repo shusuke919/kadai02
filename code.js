@@ -18,14 +18,13 @@ $("#gu").on("click", function(){
   }
   
   function result(){
-    
     setTimeout(function(){
     $(".jan_area").hide();
-  }, 6000);
+  }, 2500);
 
   setTimeout(function(){
     $('.result2').html('<button><a href="main.html">もう一回挑戦</a></button>')
-   }, 8000);
+   }, 4000);
 
 
     if(PointCom>PointMe){
@@ -43,13 +42,18 @@ $("#gu").on("click", function(){
     setTimeout(function(){
     $("#pc").text("グー")
     $("#result").text("あいこです")
-    $(".img_main").hide()
     $("#opponent").attr("src","img/gu.png")
+    $("#gu,#cho,#pa").hide()
+  
+　　　
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+　　　
 
-    
-      setTimeout(function(){
-        $(".img_main").show()
-    }, 6000);
+    }, 2000);
 
 
   }, 500);
@@ -61,6 +65,18 @@ $("#gu").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $('#point_me').text(++ PointMe);
     $("#opponent").attr("src","img/cho.png")
+    $("#gu,#cho,#pa").hide()
+
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
+
+    
   }, 500);
 
   }
@@ -70,6 +86,19 @@ $("#gu").on("click", function(){
     $("#result").text("あなたの負けです")
     $('#point_com').text(++ PointCom);
     $("#opponent").attr("src","img/pa.png")
+    $("#gu,#cho,#pa").hide()
+
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
+
+   
+
   }, 500);
   }
 });
@@ -117,6 +146,16 @@ $("#cho").on("click", function(){
     $("#result").text("あなたの負けです")
     $("#opponent").attr("src","img/gu.png")
     $('#point_com').text(++ PointCom);
+    $("#gu,#cho,#pa").hide()
+    $("#gu,#cho,#pa").show()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
   }, 500);
    
    
@@ -126,6 +165,16 @@ $("#cho").on("click", function(){
     $("#pc").text("チョキ")
     $("#result").text("あいこです")
     $("#opponent").attr("src","img/cho.png")
+    $("#gu,#cho,#pa").hide()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
+
   }, 500);
   }
   if(pc == 3){
@@ -134,6 +183,15 @@ $("#cho").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $("#opponent").attr("src","img/pa.png")
     $('#point_me').text(++ PointMe);
+    $("#gu,#cho,#pa").hide()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
   }, 500);
   }
 });
@@ -175,6 +233,15 @@ $("#pa").on("click", function(){
     $("#result").text("あなたの勝ちです")
     $("#opponent").attr("src","img/gu.png")
     $('#point_me').text(++ PointMe);
+    $("#gu,#cho,#pa").hide()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
   }, 500);
    
   }
@@ -184,6 +251,14 @@ $("#pa").on("click", function(){
     $("#result").text("あなたの負けです")
     $("#opponent").attr("src","img/cho.png")
     $('#point_com').text(++ PointCom);
+    $("#gu,#cho,#pa").hide()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+    }, 2000);
   }, 500);
   }
   if(pc == 3){
@@ -191,6 +266,15 @@ $("#pa").on("click", function(){
     $("#pc").text("パー")
     $("#result").text("あいこです")
     $("#opponent").attr("src","img/pa.png")
+    $("#gu,#cho,#pa").hide()
+
+    setTimeout(function(){
+      $("#opponent").attr("src","img/goku.png")
+      $("#pc").text("PCが出した手")
+      $("#result").text("じゃんけんの結果")
+      $("#gu,#cho,#pa").show()
+
+    }, 2000);
   }, 500);
   }
 });
