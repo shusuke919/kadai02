@@ -43,7 +43,15 @@ $("#gu").on("click", function(){
     setTimeout(function(){
     $("#pc").text("グー")
     $("#result").text("あいこです")
+    $(".img_main").hide()
     $("#opponent").attr("src","img/gu.png")
+
+    
+      setTimeout(function(){
+        $(".img_main").show()
+    }, 6000);
+
+
   }, 500);
    
   }
@@ -80,9 +88,12 @@ $("#cho").on("click", function(){
   }
 
   function result(){
+    $('.ja_main').hide();
     setTimeout(function(){
     $(".jan_area").hide();
   }, 6000);
+
+  
 
   setTimeout(function(){
     $('.result2').html(' <a href="main.html">もう一回挑戦</a>')

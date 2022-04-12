@@ -11,5 +11,91 @@ font-size: 40px;
 }
 
 img{
-width: 200px;
+  width: 200px;
+  }
+
+.img_main img{
+
+  position:absolute;
+  top:0; 
+  transform-origin:center center -5em; 
 }
+  .img_main{
+  position:relative; 
+  }
+
+
+.a{
+
+  animation:a 1s infinite;
+  }
+  
+  
+  .b{
+  
+  animation:b 1s infinite;
+  }
+  
+  
+  .c{
+  
+  animation:c 1s infinite;
+  }
+
+  @keyframes a{
+
+    0% {
+    transform:rotate3d(1,0,0,0deg);
+    }
+    
+    50% {
+    transform:rotate3d(1,0,0,-90deg);
+    }
+    
+    100% {
+    transform:rotate3d(1,0,0,-90deg);
+    }
+    
+    }
+    
+    
+    @keyframes b{
+    
+    0% {
+    
+    transform:rotate3d(1,0,0,90deg);
+    }
+    
+    50% {
+    
+    transform:rotate3d(1,0,0,0deg);
+    }
+    
+    100% {
+    
+    transform:rotate3d(1,0,0,-90deg);
+    }
+    
+    }
+    
+    
+    @keyframes c{
+    
+    0% {
+    
+    transform:rotate3d(1,0,0,90deg);
+    }
+    
+    
+    50% {
+    
+    transform:rotate3d(1,0,0,90deg);
+    }
+    
+    
+    100% {
+    
+    transform:rotate3d(1,0,0,0deg);
+    }
+    
+    }
