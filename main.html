@@ -7,49 +7,50 @@
   <title>Document</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+
 </head>
 <body>
-<header>
-  <h1>じゃんけんバトル</h1>
 
-  <img class="a" src="svg/btn.svg" />
-</header>
 
-<main>
-<div class="jan_area">
 
-  <!-- 画像
-<div class="roulette">
-<img class="a" src="img/gu.png" />
-<img class="b" src="img/choki.png" />
-<img class="c" src="img/pa.png" />
 
-</div>  -->
+<main id="gradient">
+
+  <h1 id="header_main">じゃんけんバトル</h1>
+ <div class="jan_area">
+
+ 
 
 
 <img id="opponent" src="img/goku.png" style="display: block; margin: auto;">
-<div id="pc">PCがだした手</div>
+<!-- <div id="pc"></div> -->
 
 <div class="ja_main">
-  <button id="gu">グー</button>
-  <button id="cho">チョキ</button>
-  <button id="pa">パ-</button>
+
+  <div id="gu"><a>グー</a></div>
+  <div id="cho"><a>チョキ</a></div>
+  <div id="pa"><a>パー</a></div>
+  <!-- <button id="gu">グー</button> -->
+  <!-- <button id="cho">チョキ</button>
+  <button id="pa">パ-</button> -->
 </div>
 
   
-  <div id="result">じゃんけんのけっか</div>
-  <div id="message"></div> 
-    <div id="Point01">コンピュータのとくてんは:<span id="point_com">0</span></div> 
-    <div id="Point02">あなたのとくてんは:<span id="point_me">0</span></div> 
+  <div id="result">〜結果〜</div>
+  <div id="message">
     第<span id="cnt">0</span>回戦
+    <div id="Point01">相手の得点:<span id="point_com">0</span></div> 
+    <div id="Point02">あなたの得点:<span id="point_me">0</span></div> 
+  
   </div>
+</div>
 
   <div class="result"></div><!-- 追加 クイズ終了後の表示 -->
   <a class="result2"></a><!-- 追加 クイズ終了後の表示 -->
  
 
 </main>
+
 
 
 

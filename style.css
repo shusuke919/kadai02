@@ -1,16 +1,173 @@
 body{
-/*45度に傾いたグラデーションで、青から始まり赤で終わる*/
-background: linear-gradient(-45deg, rgba(246, 225, 0, .5),
-rgba(225, 0, 161, .5));
-background-size: cover;
-font-family: "M PLUS 1p";
-height: 100vh; /* 100vhはスマホの画面の高さ　*/
-text-align: center;
-font-size: 40px;
 
+text-align: center;
+font-size: 30px;
+font-family: せのびゴシック,Arial,メイリオ,sans-serif !important;
+}
+
+#gradient
+{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#opponent{
+ 
+  padding-top: 20px;
 }
 
 img{
   width: 200px;
   }
 
+.ja_main{
+  display: flex;
+  justify-content: center;
+}
+
+#header_main{
+  
+  font-size: 50px;
+  color: #191970;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#Point01{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+  /* グーボタン　開始 */
+  #gu a {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(204,204,204,0.65);
+    border-radius: 50vh;
+    transition: 0.3s;
+  }
+  
+   #gu a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #3d9ec8;
+    border-radius: 50vh;
+    transition: 0.2s;
+  }
+  
+  .ja_main{
+  padding: 50px;
+  }
+  #gu a:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  #gu a:hover {
+    
+    text-decoration: none;
+    background-color: #a0c4d3;
+  }
+   /* グーボタン　終了 */
+
+   /* チョキボタン　開始 */
+  #cho a {
+    
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 20px 0 20px;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(204,204,204,0.65);
+    border-radius: 50vh;
+    transition: 0.3s;
+  }
+  
+   #cho a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #3d9ec8;
+    border-radius: 50vh;
+    transition: 0.2s;
+  }
+  
+  
+  
+  #cho a:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  #cho a:hover {
+    text-decoration: none;
+    background-color: #a0c4d3;
+  }
+   /* チョキボタン　終了 */
+
+   /* パーボタン　開始 */
+  #pa a {
+    
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(204,204,204,0.65);
+    border-radius: 50vh;
+    transition: 0.3s;
+  }
+  
+   #pa a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #3d9ec8;
+    border-radius: 50vh;
+    transition: 0.2s;
+  }
+  
+ 
+  
+  #pa a:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  #pa a:hover {
+    text-decoration: none;
+    background-color: #a0c4d3;
+  }
+   /* パーボタン　終了 */
+
+
+   @font-face{font-family: せのびゴシック;
+    src: url(https://dl.dropboxusercontent.com/s/0zsxc200pjot35n/Senobi-Gothic-Regular2.woff2);}
